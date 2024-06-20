@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 
-const Facebook = (event) => {
+const Facebook = () => {
     useEffect(() => {
         !(function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -28,7 +28,7 @@ const Facebook = (event) => {
             "https://connect.facebook.net/en_US/fbevents.js"
         );
         fbq("init", "1469970630550548"); // Insert your Pixel ID here
-        fbq("track", event);
+        fbq("track", "PageView");
     }, []);
 
     return null;
