@@ -7,7 +7,7 @@ ReactGA.initialize('G-WLCR27FKXY')
 
 
 function App() {
-  ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search })
+  ReactGA.send({ hitType: "begin_checkout", page: window.location.pathname + window.location.search })
   return (
     < div className="App" >
       <header className="App-header">
