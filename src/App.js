@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
-import gaTrack from './GAComponent';
+const gaTrack = require('./GAComponent')();
 
 
 function App() {
-  gaTrack()
   gaTrack.pageview(window.location.pathname)
 
   return (
