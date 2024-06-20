@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
-const gaTrack = require('./GAComponent')();
+import ReactGA from "react-ga4";
+
+ReactGA.initialize('G-WLCR27FKXY')
 
 
 function App() {
-  gaTrack.pageview(window.location.pathname)
-
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search })
   return (
-    <div className="App">
+    < div className="App" >
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -23,7 +24,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div >
   );
 }
 
