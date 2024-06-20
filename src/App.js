@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Facebook from './FbComponent';
 
-const gaTrack = require('./GAComponent')();
+import gaTrack from './GAComponent';
 
 function App() {
+  gaTrack()
   gaTrack.pageview(window.location.pathname)
+  Facebook('PageView')
   return (
     <div className="App">
       <header className="App-header">
