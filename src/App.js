@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
+const gaTrack = require('./GAComponent')();
+
 function App() {
+  gaTrack.pageview(window.location.pathname)
   return (
     <div className="App">
       <header className="App-header">
