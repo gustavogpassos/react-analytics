@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Facebook from './FbComponent';
 
 import gaTrack from './GAComponent';
 
@@ -11,7 +10,6 @@ function App() {
 
   return (
     <div className="App">
-      <Facebook />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
